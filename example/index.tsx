@@ -6,7 +6,7 @@ import { ProductCard, ProductImage, ProductTitle, ProductButtons } from 'hasm-pr
 
 const product = {
   id: 1,
-  title: "Mug",
+  title: "Example Product",
   // img: "./coffee-mug.png",
 };
 

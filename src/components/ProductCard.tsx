@@ -4,7 +4,7 @@ import { useProduct } from '../hooks/useProduct';
 import { ProductContextProps, Product, OnChangeArgs, InitialValues, ProductCardHandlers } from '../interfaces/ProductInterfaces';
 
 // Creamos el contexto para el producto
-export const ProductContext = createContext({} as ProductContextProps);
+export const ProductContext = createContext( {} as ProductContextProps );
 
 const { Provider } = ProductContext;
 
