@@ -12,9 +12,10 @@ export const ProductButtons: React.FC<ProductButtonsProps> = ({ className, style
   const { counter, count, maxCount, increaseOrDecreaseCounterBy } = useContext(ProductContext);
 
   const isMaxReached = useCallback(
-    () => (counter === maxCount) ?? false,
-    [counter, count, maxCount],
+    () => counter === maxCount,
+    [counter, maxCount],
   );
+  
 
   return (
     <div className={`${styles.buttonsContainer} ${className}`} style={style}>
