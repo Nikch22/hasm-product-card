@@ -9,7 +9,7 @@ export interface ProductButtonsProps {
 }
 
 export const ProductButtons: React.FC<ProductButtonsProps> = ({ className, style }) => {
-  const { counter, count, maxCount, increaseOrDecreaseCounterBy } = useContext(ProductContext);
+  const { counter, maxCount, increaseOrDecreaseCounterBy } = useContext(ProductContext);
 
   const isMaxReached = useCallback(
     () => counter === maxCount,
